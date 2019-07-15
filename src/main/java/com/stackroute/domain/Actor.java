@@ -1,5 +1,6 @@
 package com.stackroute.domain;
 
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class Actor {
 
@@ -7,11 +8,15 @@ public class Actor {
     private String gender;
     private int age;
 
-    public Actor(String name, String gender, int age) {
+
+    @Autowired
+    public Actor(String name, String gender, int age)
+    {
         this.name = name;
         this.gender = gender;
         this.age = age;
     }
+
 
     public String getName() {
         return name;
