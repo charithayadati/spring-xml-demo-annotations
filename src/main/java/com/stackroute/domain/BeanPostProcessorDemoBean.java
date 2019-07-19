@@ -3,6 +3,7 @@ package com.stackroute.domain;
 import org.springframework.beans.BeansException;
 
 public class BeanPostProcessorDemoBean implements org.springframework.beans.factory.config.BeanPostProcessor {
+    //Overriding the methods of interface
     @Override
     public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException
     {
