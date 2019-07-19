@@ -9,7 +9,7 @@ public class Actor {
     private String gender;
     private int age;
 
-
+    //Creating getter and setter methods
     @Autowired
     public Actor(String name, String gender, int age)
     {
