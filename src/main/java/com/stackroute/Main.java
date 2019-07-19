@@ -7,6 +7,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class Main {
     public static void main(String args[])
     {
+        //Using ApplicationContext
         ConfigurableApplicationContext context=new AnnotationConfigApplicationContext(BeanConfig.class);
         BeanLifecycleDemoBean bean=context.getBean("beanlifecycle",BeanLifecycleDemoBean.class);
         context.close();
