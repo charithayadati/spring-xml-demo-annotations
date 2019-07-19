@@ -3,6 +3,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 @Configuration
 public class MovieConfig {
+    //Creating beans using annotations
     @Bean
     public Movie movieBean()
     {
