@@ -10,18 +10,19 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class Main {
     public static void main(String args[])
     {
+        //Using ApplicationContext
         ApplicationContext context=new AnnotationConfigApplicationContext(MovieConfig.class);
         Movie movie=context.getBean("movie",Movie.class);
         System.out.println("Using ApplicationContext Aware");
         movie.actorDetails();
-
+        //Using BeanFactory
         BeanFactory beanFactory=new AnnotationConfigApplicationContext(MovieConfig.class);
         Movie movie1=beanFactory.getBean("movie",Movie.class);
         movie1.setBeanFactory(beanFactory);
         System.out.println("\nUsing BeanFactory Aware");
         movie1.actorDetails();
 
-
+        //Using BeanNameAware
         Movie movie2=context.getBean("movie",Movie.class);
         movie2.setBeanName("movie");
         System.out.println("\nUsing BeanNameAware");
