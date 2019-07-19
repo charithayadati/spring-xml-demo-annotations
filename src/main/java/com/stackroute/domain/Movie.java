@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 public class Movie
 {
+    //Creating bean using annotation
     @Autowired
     public Actor actor;
 
