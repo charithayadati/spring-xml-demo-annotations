@@ -5,7 +5,7 @@ import org.springframework.beans.factory.InitializingBean;
 
     public class BeanLifecycleDemoBean implements InitializingBean, DisposableBean{
 
-
+        //Overriding the methods of interfaces mentioned
         @Override
         public void afterPropertiesSet() throws Exception
         {
@@ -17,7 +17,7 @@ import org.springframework.beans.factory.InitializingBean;
             System.out.println("Bean Destroying");
 
         }
-
+        //Creating methods to manually display the lifecycle of bean
         public void customInit()
         {
             System.out.println("Initialization using custom-init");
