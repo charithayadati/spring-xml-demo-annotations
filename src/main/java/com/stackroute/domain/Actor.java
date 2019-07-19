@@ -3,6 +3,7 @@ package com.stackroute.domain;
 import org.springframework.beans.factory.annotation.Value;
 
 public class Actor {
+    //Injecting values using annotations
     @Value("Rahul")
     private String name;
     @Value("Male")
