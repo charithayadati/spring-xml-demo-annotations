@@ -7,7 +7,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class Main {
     public static void main(String args[])
     {
-
+    //Using ApplicationContext to get beans
         ApplicationContext context=new AnnotationConfigApplicationContext(MovieConfig.class);
         Movie movie1=context.getBean("movie1",Movie.class);
         movie1.actorDetails();
