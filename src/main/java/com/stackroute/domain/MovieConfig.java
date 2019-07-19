@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Scope;
 
 @Configuration
 public class MovieConfig {
+    //Creating beans using annotations by declaring scope as protoype
     @Bean(name={"movie1","movie2"})
     @Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
     public Movie movie()
