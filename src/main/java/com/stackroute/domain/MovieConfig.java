@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Scope;
 @Configuration
 public class MovieConfig
 {
+    //Creating beans using annotations
     @Bean(name = "actor")
     public Actor getActor()
     {
